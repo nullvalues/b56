@@ -1,0 +1,10 @@
+# Revision history for b56
+
+## 0.1.0 -- 2022-03-16
+
+* First version. Released on an unsuspecting world that should be wary of my Haskellness.
+
+## 0.1.1 -- 2022-07-27
+
+* Split Tests into separate module.  
+* Added folder hierarchy to leave room for different base conversions (b8, b16, etc) other that b10
