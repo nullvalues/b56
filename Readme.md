@@ -16,23 +16,41 @@ Download and install with cabal install B56 --lib
 ## Usage
 
 $ cd b56
+
 $ cabal repl
+
 *B10> runSomeTests
+
 "Pass"
+
 *B10> let myId = convertB10ToBx 1010101
+
 *B10> myId
+
 "5k5W"
+
 *B10> let myBx = convertBxToB10 "5k5W"
+
 *B10> myBx
+
 Left 1010101
+
 *B10> let myBx' = convertBxToB10' "5k5W"
+
 *B10> myBx'
+
 1010101
+
 *B10> let myBadBx = convertBxToB10 "Oily"
+
 *B10> myBadBx
+
 Right "Cannot attempt to convert an invalid unit value in : 'Oily'. \n    The value is not in the base character set 0123456789ABCDEFGHJKMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz"
+
 *B10> let mySafeBx = convertBxToB10' "Oily"
+
 *B10> mySafeBx
+
 -1
 
 or
