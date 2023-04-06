@@ -15,7 +15,7 @@ Download and install with cabal install B56 --lib
 $ cd b56
 
 $ cabal repl
-
+```
 *B10> runSomeTests
 
 "Pass"
@@ -49,6 +49,7 @@ Right "Cannot attempt to convert an invalid unit value in : 'Oily'. \n    The va
 *B10> mySafeBx
 
 -1
+```
 
 or
 
